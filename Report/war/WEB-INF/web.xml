@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	
+	<servlet>
+		<servlet-name>Resistmember</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.Resistmember</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Resistmember</servlet-name>
+		<url-pattern>/Resistmember</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Read</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.ReadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Read</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RetrieveServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.RetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RetrieveServlet</servlet-name>
+		<url-pattern>/RetrieveServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateMember</servlet-name>
+		<servlet-class>kr.ac.shinhan.csp.UpdateMember</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMember</servlet-name>
+		<url-pattern>/UpdateMember</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
